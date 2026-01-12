@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/habits")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://ecohabit-nlp.netlify.app/")
 public class HabitController {
 
     private final HabitService habitService;
@@ -42,3 +42,4 @@ public class HabitController {
         return ResponseEntity.ok(habit);
     }
 }
+
