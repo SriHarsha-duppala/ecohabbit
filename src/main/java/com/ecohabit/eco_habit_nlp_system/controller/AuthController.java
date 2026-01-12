@@ -11,7 +11,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://ecohabit-nlp.netlify.app/")
 public class AuthController {
 
     @Autowired
@@ -75,3 +75,4 @@ public class AuthController {
     public record ForgotRequest(String email) {}
     public record ResetRequest(String token, String newPassword) {}
 }
+
