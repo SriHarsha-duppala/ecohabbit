@@ -9,7 +9,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/analytics")
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://ecohabit-nlp.netlify.app/")
 public class AnalyticsController {
 
     private final AnalyticsService analyticsService;
@@ -36,3 +36,4 @@ public class AnalyticsController {
         return analyticsService.getDailyEcoScoreTrend(userId, year, month);
     }
 }
+
