@@ -94,7 +94,7 @@ public class UserService {
         message.setSubject("Eco Habit - Password Reset");
         message.setText(
                 "Reset your password using this link:\n" +
-                "http://localhost:3000/reset-password?token=" + token
+                "https://ecohabit-nlp.netlify.app/reset-password?token=" + token
         );
 
         mailSender.send(message);
@@ -128,3 +128,4 @@ public class UserService {
         tokenRepo.delete(prt);
     }
 }
+
