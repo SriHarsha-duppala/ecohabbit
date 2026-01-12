@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin(origins = "https://ecohabit-nlp.netlify.app/")
 public class VoiceController {
 
     @PostMapping("/api/voice/text")
@@ -14,3 +14,4 @@ public class VoiceController {
         return "Received voice text: " + text;
     }
 }
+
